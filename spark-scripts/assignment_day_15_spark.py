@@ -38,3 +38,5 @@ retail_df = spark.read.jdbc(
     'public.retail',
     properties=jdbc_properties
 )
+
+retail_df.show(5)
